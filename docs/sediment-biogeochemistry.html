@@ -97,7 +97,7 @@ Figure 7.1: CANDI-AED includes chemical processes of organic matter transformati
 <p>The CDM sediment modelling approach uses the CANDI-AED model configurable through the AED <span class="math inline">\(SDG\)</span> module, as outlined in the <a href="https://aquaticecodynamics.github.io/aed-science/sediment-biogeochemistry.html">AED science manual</a>. The configuration used in the CDM simulations resolves both physical (e.g. pore-water diffusion or bioturbation) and chemical (e.g., redox transformations) processes as summarised below.</p>
 <p><strong>Chemical reactions</strong></p>
 <p>The dynamic model considers two types of reactions - the slow, kinetically controlled reactions, and the fast thermodynamically based equilibrium reactions. The latter are simulated in the sediment through appropriate configuration of the geochemistry reactions; the configuration of the equilibrium model will apply to both the water and each of the sediment layers. The kinetically controlled reactions are mostly microbially-mediated and include the reactions for organic matter breakdown and eventual oxidation, the re-oxidation of various by-products and the dynamics of the metal sulfides.</p>
-<p>The organic matter (<span class="math inline">\(OM\)</span>) degradation pathway considers labile and refractory <span class="math inline">\(DOM\)</span> components (<span class="math inline">\(DOM_L\)</span> and <span class="math inline">\(DOM_R\)</span> respectively) and the breakdown pathway simulated is conceptually summarized in Figure <span class="math inline">\(\ref{fig:sed_dynamic}\)</span>. Reactions included in the kinetic component include the hydrolysis of the complex (e.g., high molecular weight) <span class="math inline">\(OM\)</span> pools (<span class="math inline">\(POM_{VR}\)</span>, <span class="math inline">\(POM_R\)</span>, <span class="math inline">\(DOM_R\)</span>, <span class="math inline">\(POM_L\)</span>) and transformation of low molecular weight (LMW) <span class="math inline">\(DOM_L\)</span> by oxidants (<span class="math inline">\(O_2\)</span>, <span class="math inline">\(MnO_2\)</span>, <span class="math inline">\(Fe(III)\)</span> and <span class="math inline">\(SO_4^{2-}\)</span> - the so-called ‘terminal metabolism’), and the release of resulting nutrients (<span class="math inline">\(NO_3^-\)</span>, <span class="math inline">\(NH_4^+\)</span>, <span class="math inline">\(PO_4^{3-}\)</span>) and reduced by-products (<span class="math inline">\(Mn^{2+}\)</span>, <span class="math inline">\(Fe^{2+}\)</span>, <span class="math inline">\(N_2\)</span>, <span class="math inline">\(H_2S\)</span>, <span class="math inline">\(CH_4\)</span>) and <span class="math inline">\(CO_2\)</span>. In addition to the primary redox reactions associated with <span class="math inline">\(OM\)</span> breakdown, the model also includes numerous secondary reactions, such as oxidation of reduced by-products (e.g., Fe or S oxidation).</p>
+<p>The organic matter (<span class="math inline">\(OM\)</span>) degradation pathway considers labile and refractory <span class="math inline">\(DOM\)</span> components (<span class="math inline">\(DOM_L\)</span> and <span class="math inline">\(DOM_R\)</span> respectively) and the breakdown pathway simulated is conceptually summarized in Figure . Reactions included in the kinetic component include the hydrolysis of the complex (e.g., high molecular weight) <span class="math inline">\(OM\)</span> pools (<span class="math inline">\(POM_{VR}\)</span>, <span class="math inline">\(POM_R\)</span>, <span class="math inline">\(DOM_R\)</span>, <span class="math inline">\(POM_L\)</span>) and transformation of low molecular weight (LMW) <span class="math inline">\(DOM_L\)</span> by oxidants (<span class="math inline">\(O_2\)</span>, <span class="math inline">\(MnO_2\)</span>, <span class="math inline">\(Fe(III)\)</span> and <span class="math inline">\(SO_4^{2-}\)</span> - the so-called ‘terminal metabolism’), and the release of resulting nutrients (<span class="math inline">\(NO_3^-\)</span>, <span class="math inline">\(NH_4^+\)</span>, <span class="math inline">\(PO_4^{3-}\)</span>) and reduced by-products (<span class="math inline">\(Mn^{2+}\)</span>, <span class="math inline">\(Fe^{2+}\)</span>, <span class="math inline">\(N_2\)</span>, <span class="math inline">\(H_2S\)</span>, <span class="math inline">\(CH_4\)</span>) and <span class="math inline">\(CO_2\)</span>. In addition to the primary redox reactions associated with <span class="math inline">\(OM\)</span> breakdown, the model also includes numerous secondary reactions, such as oxidation of reduced by-products (e.g., Fe or S oxidation).</p>
 <p><strong>Physical processes</strong></p>
 <p>The model accounts for advection and diffusion processes of solid and solute consituents. Porosity (<span class="math inline">\(\phi\)</span>) is defined to decrease with depth, and for the porewater components, diffusion coefficients are used that are based on free-solution molecular diffusion constants corrected for sediment tortuosity, <span class="math inline">\(θ\)</span>. For bioturbation, the model uses a diffusion coefficient that varies with depth (<span class="math inline">\(D_{B(z)}\)</span>) as a two layer function or a Gaussian decrease. The irrigation of pore water is also simulated to account for the activity benthic infauna in the upper sediment.</p>
 <p>Fluxes of dissolved species occur between the sediment and water column depending on the sediment type (e.g. porosity), the solute type, and the degree of interfacial turbulence being experienced at the sediment-water interface. Dissolved fluxes are calculated from the concentration gradient at the sediment-water interface according to Fick’s Law:</p>
@@ -187,7 +187,7 @@ Figure 7.4: Diagram of bioturbation setup, showing full bioturbation above the p
 <h4>
 <span class="header-section-number">7.2.0.1</span> Denitrification<a class="anchor" aria-label="anchor" href="#denitrification"><i class="fas fa-link"></i></a>
 </h4>
-<p>One way to remove nitrogen from the modelling domain is conversion of dissolved N to <span class="math inline">\(N_2\)</span>, which then makes it unreactive: this is generally referred to as ‘denitrification’. The two specific processes that create <span class="math inline">\(N_2\)</span> that are used in this model are deammonification (<span class="math inline">\(R_{NH_{4}NO_{2}}\)</span>) and denitrousation (<span class="math inline">\(R_{Denitrousation}\)</span>). Deammonification is the reaction between <span class="math inline">\(NO_2^-\)</span> and <span class="math inline">\(NH_4^+\)</span> and so it is dependent on the concentration of the reactants, and the process is also inhibited by <span class="math inline">\(O_2\)</span>. Deammonification relies on partially-oxidised N as <span class="math inline">\(NO_2^-\)</span> as well as an anoxic environment. Denitrousation converts the N in <span class="math inline">\(N_2O\)</span> to <span class="math inline">\(N_2\)</span> by oxidising organic matter, and so the rate is highly dependent on organic matter concentration, as well as formation of <span class="math inline">\(N_2O\)</span>. Both of these processes require a dynamic oxic-anoxic environment to create the reactants and allow the denitrification reactions to occur uninhibited. These reactions are also inhibited by high salinity, through the <span class="math inline">\(F_{Sal}\)</span> term.</p>
+<p>One way to remove nitrogen from the modelling domain is conversion of dissolved N to <span class="math inline">\(N_2\)</span>, which then makes it unreactive: this is generally referred to as ‘denitrification.’ The two specific processes that create <span class="math inline">\(N_2\)</span> that are used in this model are deammonification (<span class="math inline">\(R_{NH_{4}NO_{2}}\)</span>) and denitrousation (<span class="math inline">\(R_{Denitrousation}\)</span>). Deammonification is the reaction between <span class="math inline">\(NO_2^-\)</span> and <span class="math inline">\(NH_4^+\)</span> and so it is dependent on the concentration of the reactants, and the process is also inhibited by <span class="math inline">\(O_2\)</span>. Deammonification relies on partially-oxidised N as <span class="math inline">\(NO_2^-\)</span> as well as an anoxic environment. Denitrousation converts the N in <span class="math inline">\(N_2O\)</span> to <span class="math inline">\(N_2\)</span> by oxidising organic matter, and so the rate is highly dependent on organic matter concentration, as well as formation of <span class="math inline">\(N_2O\)</span>. Both of these processes require a dynamic oxic-anoxic environment to create the reactants and allow the denitrification reactions to occur uninhibited. These reactions are also inhibited by high salinity, through the <span class="math inline">\(F_{Sal}\)</span> term.</p>
 </div>
 <div id="salinity-and-denitrification" class="section level4 unnumbered">
 <h4>Salinity and denitrification<a class="anchor" aria-label="anchor" href="#salinity-and-denitrification"><i class="fas fa-link"></i></a>
@@ -232,7 +232,7 @@ Figure 7.5: Diaagram of the salinity factor <span class="math inline">\(F_{Sal}\
 <p>As mentioned above, <span class="math inline">\(SO_4^{2-}\)</span> bottom water concentrations were tied to salinity and initial <span class="math inline">\(SO_4^{2-}\)</span> concentrations were set to reflect the salinity gradient along the estuary. Consequently, the generation of <span class="math inline">\(H_{2}S\)</span> was higher in the southern zones. High <span class="math inline">\(H_{2}S\)</span> concentration was set to inhibit biota-driven mixing and nitrogen redox reactions, on the basis that <span class="math inline">\(H_{2}S\)</span> is toxic to organisms. An <span class="math inline">\(H_{2}S\)</span> factor, <span class="math inline">\(F_{Sul}\)</span>, was set up as an inhibition factor similar to other inhibition factors in the sediment model.</p>
 <span class="math display">\[\begin{eqnarray}
 
-F_{Sul} = \frac {K_{H_{2}S}} {(K_{H_{2}S} + H_{2}S)}
+F_{Sul} = \frac {K_{H_{2}S}} {(K_{H_{2}S} + H_{2}S)} 
 
 \end{eqnarray}\]</span>
 <p>As with <span class="math inline">\(F_{Sal}\)</span>, <span class="math inline">\(F_{Sul}\)</span> scales between 1 and 0, however, as a decay rather than a stepped function (Figure <a href="sediment-biogeochemistry.html#fig:dev-picsbudgetsetup-3">7.6</a>). The value for <em>K<sub>H2S</sub></em> can be found in the physical parameters table above. In this simulation, the same value for all was used in all zones.</p>
@@ -283,7 +283,7 @@ NH_{4 _{Dissolved}}^+   = NH_{4_{Total}}^+ - NH_{4 _{Particulate}}^+
 <p><span class="math inline">\(PO_4^{3-}\)</span> was adsorbed onto the surfaces of iron oxide particles, both the reactive <span class="math inline">\(Fe(OH)_{3A}\)</span> and unreactive <span class="math inline">\(Fe(OH)_{3B}\)</span> fractions. (While the sediment model has optional configurations, as outlined in the AED Manual, in this simulation the options <em>PO4AdsorptionModel</em> = 1 and <em>ads_use_pH</em> = TRUE.) The overall property of this setup was that low oxygen and nitrate concentrations in the sediment cause iron oxide reduction, which dissolves the solid particles and releases the dissolved <span class="math inline">\(PO_4^{3-}\)</span> to the porewater.</p>
 <span class="math display">\[\begin{eqnarray}
 
-PO_{4_{Particulate}}^{3-} = \frac {K_{PO_4p} (Fe(OH)_{3A} + Fe(OH)_{3B})}
+PO_{4_{Particulate}}^{3-} = \frac {K_{PO_4p} (Fe(OH)_{3A} + Fe(OH)_{3B})} 
 {1 + K_{PO_4p} (Fe(OH)_{3A} + Fe(OH)_{3B}) } (PO_{4 _{Total}}^{3-})
 \\
 \\
@@ -293,7 +293,7 @@ PO_{4_{Dissolved}}^{3-}   = \frac {1} {1 + K_{PO_4p} (Fe(OH)_{3A} + Fe(OH)_{3B})
 <p>The final feature developed for nutrient burial for this project was the very unreactive organic matter parameter. As mentioned in the model setup above, the organic matter setup in this model has labile and refractory phases, as state variables. The model was extended in this project by dropping the reactivity of the particulate refractory phase towards zero as the concentration approaches a minimum. For <span class="math inline">\(PON_R\)</span>, the parameter <em>ponu</em> set the minimum concentration and <em>KOMPres_N</em> set the sensitivity of the decrease, as in the equation below. The equivalent parameters for C an P were <em>pocu</em> and <em>popu</em>, and <em>KOMPres_C</em> and <em>KOMPres_P</em>.</p>
 <span class="math display">\[\begin{eqnarray}
 
-komlim = \frac {PON_R - ponu} {PON_R - ponu + KOMPres_N}
+komlim = \frac {PON_R - ponu} {PON_R - ponu + KOMPres_N} 
 \\
 \\
 R_{PONR} = (ponr2donr) (komlim)
@@ -1163,7 +1163,7 @@ Figure 7.10: Schematic of major N pools, as transferred between the water and se
 </p>
 </div>
 </div>
-<p>The flux of <span class="math inline">\(Fe(OH)_{3A}\)</span> from the water column to the sediment is set from the parameter ‘default_vals’. In the water column model, Fe is not simulated, therefore one value was applied equally to all zones. The value was calibrated to fit the <span class="math inline">\(Fe^2+\)</span> concentration value.
+<p>The flux of <span class="math inline">\(Fe(OH)_{3A}\)</span> from the water column to the sediment is set from the parameter ‘default_vals.’ In the water column model, Fe is not simulated, therefore one value was applied equally to all zones. The value was calibrated to fit the <span class="math inline">\(Fe^2+\)</span> concentration value.
 <br></p>
 <p><br></p>
 </div>
@@ -5030,7 +5030,7 @@ Equilibrium constant for FeS precipitation (-)
 <p>The dominant reaction pathways for nitrogen include hydrolysis of <span class="math inline">\(PON_R\)</span> to <span class="math inline">\(DON_R\)</span>, and mineralisation of <span class="math inline">\(DON_R\)</span> to <span class="math inline">\(NH_4^+\)</span>. The major chemical processes that affected the mass budget were hydrolysis of <span class="math inline">\(PON_R\)</span> to <span class="math inline">\(DON_R\)</span> and mineralization of <span class="math inline">\(DON_R\)</span> to <span class="math inline">\(NH_4^+\)</span>.</p>
 <span class="math display">\[\begin{eqnarray}
 \\
-    PON_{R} \rightarrow DON_{R}
+    PON_{R} \rightarrow DON_{R} 
 \\
     DON_{R} \rightarrow NH_{4}^{+}    
 \\
@@ -5579,14 +5579,7 @@ NA
 <!-- install.packages("kableExtra", lib="C:/Program Files/R/R-4.2.0/library") --><!-- install.packages("knitr", lib="C:/Program Files/R/R-4.2.0/library") --><!-- install.packages("readxl", lib="C:/Program Files/R/R-4.2.0/library") --><!-- library(rmarkdown, lib.loc = "C:/Program Files/R/R-4.2.0/library") --><!-- install.packages("downlit") --><!-- library(knitr) --><!-- library(kableExtra) --><!-- library(readxl) --><!-- library(downlit) -->
 </div>
 </div>
-<script>
-var img = document.body.getElementsByTagName("img");
-var i = 0;
-while (i < img.length) {
-    img[i].setAttribute("data-action", "zoom");
-    i++;
-}
-</script><script src="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js"></script><link href="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js"></script><link href="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom.css" rel="stylesheet">
 <div class="chapter-nav">
 <div class="prev"><a href="macroalgae.html"><span class="header-section-number">6</span> Macroalgae</a></div>
 <div class="next"><a href="habitat-modelling.html"><span class="header-section-number">8</span> Habitat Modelling</a></div>

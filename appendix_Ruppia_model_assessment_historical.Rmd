@@ -11,24 +11,24 @@ In general, the spatial distribution of seeds and flowers in the field agreed wi
 
 In addition to the visual comparison between model outputs and field observations, a quantitative validation was conducted between seed abundance in 2019 and HSI flowering and seed set in 2018 (Figure \@ref(fig:hist-seed2019) and Figure \@ref(fig:hist-seed2019box)). A 600-meter radius buffer was created around each sampling site, and HSI value in each cell that falls within this buffer were averaged and compared with seed count at each site.
 
-```{r hist-seed2017, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average seed count per core in **2017 January** (circles) overlaid on HSI model output for flowering and seed set in 2016. Inset on top right shows the overall habitat suitability for the flowering and seed set phase of Ruppia as a function of salinity f(S), light f(l), water level f(WL), and presence of filamentous algae f(FA). An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow)."}
+```{r hist-seed2017, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average seed count per core in **2017 January** (circles) overlaid on HSI model output for flowering and seed set in 2016. Inset on top right shows the overall habitat suitability for the flowering and seed set phase of Ruppia as a function of salinity f(S), light f(l), water level f(WL), and presence of filamentous algae f(FA). An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow).",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/hist_seed2017vsHSI2016.png")
 
 ```
 
-```{r hist-seed2018, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average seed count per core in **2018 January** (circles) overlaid on HSI model output for flowering and seed set in 2017. Inset on top right shows the overall habitat suitability for the flowering and seed set phase of Ruppia as a function of salinity f(S), light f(l), water level f(WL), and presence of filamentous algae f(FA). An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow)."}
+```{r hist-seed2018, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average seed count per core in **2018 January** (circles) overlaid on HSI model output for flowering and seed set in 2017. Inset on top right shows the overall habitat suitability for the flowering and seed set phase of Ruppia as a function of salinity f(S), light f(l), water level f(WL), and presence of filamentous algae f(FA). An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow).",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/hist_seed2018vsHSI2017.png")
 
 ```
 
-```{r hist-seed2019, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average seed count per core in **2019 January** (circles) overlaid on HSI model output for flowering and seed set in 2018. A HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow). Inset shows the size of the buffers created around sampling sites."}
+```{r hist-seed2019, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average seed count per core in **2019 January** (circles) overlaid on HSI model output for flowering and seed set in 2018. A HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow). Inset shows the size of the buffers created around sampling sites.",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/hist_seed2019vsHSI2018.png")
 ```
 
-```{r hist-seed2019box, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Scatter and box plot of average seed count per core in 2019 January versus averaged HSI for flowering and seed set in 2018 in the entire lagoon (top panel: red - north lagoon sites; blue - south lagoon sites) and south lagoon (bottom panel). Text on top of each data point indicates site name."}
+```{r hist-seed2019box, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Scatter and box plot of average seed count per core in 2019 January versus averaged HSI for flowering and seed set in 2018 in the entire lagoon (top panel: red - north lagoon sites; blue - south lagoon sites) and south lagoon (bottom panel). Text on top of each data point indicates site name.",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/hist_seed2019vsHSI2018_box.png")
 
@@ -36,7 +36,7 @@ knitr::include_graphics("images/lagoon_habitat/hist_seed2019vsHSI2018_box.png")
 
 The modelled Ruppia HSI prediction for flowers correlates reasonably well with the observed seed count measured at the beginning of the following season, particularly in the South Lagoon (Figure \@ref(fig:hist-seed2019box)).
 
-```{r hist-flower2016, echo = FALSE, out.width='100%', class = "text-image",fig.align='center', fig.cap = "Average flowerhead count per square meter quadrat in 2016 November (circles) overlaid on HSI model output for flowering and seed set in 2016. Inset on top right shows the overall habitat suitability for the flowering and seed set phase of Ruppia as a function of salinity f(S), light f(l), water level f(WL), and presence of filamentous algae f(FA). An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow)."}
+```{r hist-flower2016, echo = FALSE, out.width='100%', class = "text-image",fig.align='center', fig.cap = "Average flowerhead count per square meter quadrat in 2016 November (circles) overlaid on HSI model output for flowering and seed set in 2016. Inset on top right shows the overall habitat suitability for the flowering and seed set phase of Ruppia as a function of salinity f(S), light f(l), water level f(WL), and presence of filamentous algae f(FA). An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow).",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/hist_flower2016vsHSI2016.png")
 
@@ -50,19 +50,19 @@ Surveys conducted during other times of the year, such as May or July would be l
 
 Visual validation of turions showed mixed results (Figure \@ref(fig:hist-turion2016) - Figure \@ref(fig:hist-turion2019)). HSIs for turion formation in 2015 were generally consistent with turion distribution and abundance in 2016 January, where south lagoon observed more suitable environmental conditions than the north, and field records showed a similar pattern (Figure \@ref(fig:hist-turion2016)). However, the model seemed to underpredict habitat suitability in the south lagoon in 2016 and 2018 (Figure \@ref(fig:hist-turion2017) and Figure \@ref(fig:hist-turion2019)).
 
-```{r hist-turion2016, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average turion count (type I and II) per core in **2016 January** (circles) overlaid on HSI model output for turion formation in 2015. Inset on top right shows the overall habitat suitability for the turion formation phase of Ruppia as a function of salinity f(S), light f(l), water level f(WL), and presence of filamentous algae f(FA). An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow)."}
+```{r hist-turion2016, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average turion count (type I and II) per core in **2016 January** (circles) overlaid on HSI model output for turion formation in 2015. Inset on top right shows the overall habitat suitability for the turion formation phase of Ruppia as a function of salinity f(S), light f(l), water level f(WL), and presence of filamentous algae f(FA). An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow).",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/hist_turion2016vsHSI2015.png")
 
 ```
 
-```{r hist-turion2017, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "HSI turion Average turion count (type I and II) per core in **2017 January** (circles) overlaid on HSI model output for turion formation in 2016. Inset on top right shows the overall habitat suitability for the turion formation phase of Ruppia as a function of salinity f(S), light f(l), water level f(WL), and presence of filamentous algae f(FA). An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow)."}
+```{r hist-turion2017, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "HSI turion Average turion count (type I and II) per core in **2017 January** (circles) overlaid on HSI model output for turion formation in 2016. Inset on top right shows the overall habitat suitability for the turion formation phase of Ruppia as a function of salinity f(S), light f(l), water level f(WL), and presence of filamentous algae f(FA). An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow).",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/hist_turion2017vsHSI2016.png")
 
 ```
 
-```{r hist-turion2019, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average turion count (type I and II) per core in **2019 January** (circles) overlaid on HSI model output for turion formation in 2018. Inset on top right shows the overall habitat suitability for the turion formation phase of Ruppia as a function of salinity f(S), light f(l), water level f(WL), and presence of filamentous algae f(FA). An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow)."}
+```{r hist-turion2019, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average turion count (type I and II) per core in **2019 January** (circles) overlaid on HSI model output for turion formation in 2018. Inset on top right shows the overall habitat suitability for the turion formation phase of Ruppia as a function of salinity f(S), light f(l), water level f(WL), and presence of filamentous algae f(FA). An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow).",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/hist_turion2019vsHSI2018.png")
 
@@ -76,13 +76,13 @@ Although a proportion of Ruppia might have died off in January, the total shoot 
 
 Similar to turion predictions, the HSI model seemed to relatively underpredict the habitat suitability in the south lagoon, and overpredict in the north in both years (Figure \@ref(fig:hist-shoot2018) and Figure \@ref(fig:hist-shoot2019)). Since the model result is an integration of all life stages of Ruppia, this mismatch may be stemmed from a particular life stage, such as the turion formation stage described in the above section.
 
-```{r hist-shoot2018, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average shoot count (green and brown) per core in **2018 January** (circles) overlaid on HSI model output for combined sexual and asexual cycle in 2017. Inset on top right shows the overall habitat suitability for the completion of sexual and asexual life cycle of Ruppia by integrating the HSI results for each life stage. An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow)."}
+```{r hist-shoot2018, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average shoot count (green and brown) per core in **2018 January** (circles) overlaid on HSI model output for combined sexual and asexual cycle in 2017. Inset on top right shows the overall habitat suitability for the completion of sexual and asexual life cycle of Ruppia by integrating the HSI results for each life stage. An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow).",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/hist_shoot2018vsHSI2017.png")
 
 ```
 
-```{r hist-shoot2019, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average shoot count (green and brown) per core in **2019 January** (circles) overlaid on HSI model output for combined sexual and asexual cycle in 2018. Inset on top right shows the overall habitat suitability for the completion of sexual and asexual life cycle of Ruppia by integrating the HSI results for each life stage. An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow)."}
+```{r hist-shoot2019, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Average shoot count (green and brown) per core in **2019 January** (circles) overlaid on HSI model output for combined sexual and asexual cycle in 2018. Inset on top right shows the overall habitat suitability for the completion of sexual and asexual life cycle of Ruppia by integrating the HSI results for each life stage. An HSI of 0 (dark purple) represents unsuitable habitat conditions, while an HSI of 1 represents optimal conditions (yellow).",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/hist_shoot2019vsHSI2018.png")
 

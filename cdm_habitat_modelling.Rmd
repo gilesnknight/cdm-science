@@ -12,7 +12,7 @@ The germination and growth of *R. tuberosa* is known to be governed in large par
 
 In addition, salinity has also been identified as the key driver that influences fish assemblage structure and the extent of estuarine fish habitat in the Coorong (Ye et al. 2011). This section describes how simulations of *Ruppia* and estuarine fish habitat have been configured and assessed.
 
-```{r hab-pic1, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Conceptual diagram of *Ruppia* presence in the Coorong, under base case conditions=  with moderate inflows from the Barrages (North) and Salt Creek (South-east)."}
+```{r hab-pic1, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Conceptual diagram of *Ruppia* presence in the Coorong, under base case conditions=  with moderate inflows from the Barrages (North) and Salt Creek (South-east).",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/fig1.png")
 
@@ -26,7 +26,7 @@ For the Coorong, a similar habitat model approach was undertaken previously by Y
 
 In this study, we used the hydrodynamic-biogeochemical model to predict environmental conditions at high spatial and temporal resolution for a period of multiple years, and used this to calculate the habitat suitability index (HSI) for each particular phase of the life cycle of *Ruppia* (Figure \@ref(fig:hab-pic2)). The calculation of the HSI required the integration of environmental conditions over a biologically relevant time period, based on the typical duration and seasonal timing for each life-stage. HSI results for different life stages were then combined and integrated to obtain overall HSI results for successful completion of sexual or asexual life cycles of *Ruppia*. For each annual cycle these model results were then summarised over the length of the Coorong, to allow estimation of the total suitable area.
 
-```{r hab-pic2, echo = FALSE, out.width='75%', class = "text-image", fig.align='center', fig.cap = "Overview of the sexual and vegetative life cycles of *Ruppia tuberosa* (from Collier et al. 2017)."}
+```{r hab-pic2, echo = FALSE, out.width='75%', class = "text-image", fig.align='center', fig.cap = "Overview of the sexual and vegetative life cycles of *Ruppia tuberosa* (from Collier et al. 2017).",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/lifecycle.png")
 ```
@@ -78,17 +78,17 @@ The model approach requires empirical data for a) assignment of appropriate envi
 
 *Ruppia* life-stage time windows were reviewed based on both the phenology and seasonal survey datasets collected during the HCHB program. Number of *Ruppia* flowers, fruits, seeds, turions and their biomass recorded at each site during September 2020 -- December 2021 as well as algae biomass were grouped by month and plotted as timeseries to visualise the peak of life-stage events that are relevant to the *Ruppia* habitat model. It was evident that the peak of flowering/fruiting and turion formation lies between September and December (Figure \@ref(fig:phe-sex) and Figure \@ref(fig:phe-asex)). Seed count peaked around March -- May in 2021, as well as during the reproductive period (September -- December) in 2020, however in 2021 Dec much fewer seeds were recorded (Figure \@ref(fig:phe-sex)). Peak algae growth occurred around September -- December, coincident with the *Ruppia* reproductive period (Figure \@ref(fig:phe-biomass)). It was suggested that there were remnant living plants during the aestivation season (January -- March), which indicates the presence of a perennial *Ruppia* community (Lewis et al. 2022).
 
-```{r phe-sex, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Boxplots  of monthly *Ruppia* flower count, fruit count, seed count (per m^2^) and biomass of sexual reproductive structures (inflorescence, flowers, fruits, g DW/m^2^) between December 2020 and December 2021. ‘+’ indicates data outside of plotting range."}
+```{r phe-sex, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Boxplots  of monthly *Ruppia* flower count, fruit count, seed count (per m^2^) and biomass of sexual reproductive structures (inflorescence, flowers, fruits, g DW/m^2^) between December 2020 and December 2021. ‘+’ indicates data outside of plotting range.",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/phenology_sexual.png")
 ```
 
-```{r phe-asex, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Boxplots of monthly *Ruppia* turion count (type I and type II combined, per m^2^) and turion biomass (type I and type II combined, g DW/m^2^) between December 2020 and December 2021."}
+```{r phe-asex, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Boxplots of monthly *Ruppia* turion count (type I and type II combined, per m^2^) and turion biomass (type I and type II combined, g DW/m^2^) between December 2020 and December 2021.",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/phenology_asexual.png")
 ```
 
-```{r phe-biomass, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Boxplots of monthly aboveground macrophyte biomass (excluding reproductive structures, g DW/m^2^) and estimated algae biomass (g DW/m^2^) between December 2020 and December 2021."}
+```{r phe-biomass, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Boxplots of monthly aboveground macrophyte biomass (excluding reproductive structures, g DW/m^2^) and estimated algae biomass (g DW/m^2^) between December 2020 and December 2021.",out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/lagoon_habitat/phenology_shoot_algae.png")
 ```

@@ -810,7 +810,7 @@ I_{i} = f_{i} I_{0} \text{exp} (-K_{d_{i}} z)
 \]</span></p>
 <p>where <span class="math inline">\(i\)</span> refers to the specific bandwidth range (e.g., PAR, UV, etc), <span class="math inline">\(f_i\)</span> is the fraction of light intensity within that range at the water surface and <span class="math inline">\(z\)</span> is the water depth. The light extinction coefficient <span class="math inline">\(K_d\)</span> is a variable parameter governing light attenuation, as influenced by the suspended solids (<span class="math inline">\(SS\)</span>) in the water column, filamentous algae density, and vegetation leaf area index. In these simulations it is computed by assuming a background light extinction coefficient <span class="math inline">\(K_w\)</span> and the specific attenuation coefficient, <span class="math inline">\(K_e\)</span>, for <span class="math inline">\(SS\)</span> and algae:</p>
 <p><span class="math display" id="eq:resus5">\[
-K_{d} = K_{w} + K_{e_{s}} SS + K_{e_{pom}} POC +  K_{e_{PHY}} PHY + K_{e_{F}} FA
+K_{d} = K_{w} + K_{e_{s}} SS + K_{e_{pom}} POC +  K_{e_{PHY}} PHY + K_{e_{F}} FA 
 \tag{4.5}
 \]</span></p>
 <p>Computing turbidity from the concentration of particulates is also possible and able to be compared to routinely measured turbidity data. The relation for simulation of turbidity is able to be expressed as:</p>
@@ -1195,14 +1195,7 @@ document.getElementById("defaultOpen").click();
 
 </div>
 </div>
-<script>
-var img = document.body.getElementsByTagName("img");
-var i = 0;
-while (i < img.length) {
-    img[i].setAttribute("data-action", "zoom");
-    i++;
-}
-</script><script src="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js"></script><link href="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js"></script><link href="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom.css" rel="stylesheet">
 <div class="chapter-nav">
 <div class="prev"><a href="model-data-ecosystem.html"><span class="header-section-number">3</span> Model-Data Ecosystem</a></div>
 <div class="next"><a href="oxygen-nutrients-chlorophyll-a.html"><span class="header-section-number">5</span> Oxygen, Nutrients &amp; Chlorophyll-a</a></div>

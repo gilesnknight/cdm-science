@@ -14,7 +14,7 @@ The Coorong naturally splits about halfway into the North and South Lagoons at a
 
 The Coorong system is an important habitat for waterbirds, supporting more than 1% of the global populations of nine waterbird taxa (Paton et al., 2009). The region is recognised as a Wetland of International Importance under the Ramsar Convention. Furthermore, the Lower Lakes and Coorong are an important refuge for waterbirds, hosting up to 90% of waterbirds counted at icon sites in the Murray-Darling Basin during drought (Kingsford and Porter, 2008). However, like other Australian estuaries and coastal wetlands (Kingsford, 2000), the Coorong is increasingly threatened and its ecological health has been eroded by river regulation and over extraction of water. Waterbird populations have declined by at least 30% since 1985 (Paton et al., 2009) and low flows have led to decreased fish abundance (Brookes et al., 2015). Freshwater flows to the Murray Mouth and Coorong help maintain an open Murray Mouth, maintain connectivity for diadromous fish and modify water level and salinity in the Coorong, which shapes the habitat for biota. Freshwater flows are important in maintaining estuarine habitat and ecosystem health and preventing extreme hyper-salinity (Brookes et al. 2009), which are influenced by flows through the barrages. Salinity has been identified as a key driver of fish distribution and assemblage structure by influencing the extent of estuarine fish habitat in the Coorong (Ye et al. 2011; 2016a; Bice et al. 2018; Brookes et al., 2021). Early summer flows are likely to be particularly beneficial as they delay the drop in water level in the South Lagoon and can prevent extreme salinities emerging, thereby improving habitat conditions for key fish species.
 
-```{r intro-pic1, echo = FALSE, out.width='80%', class = "text-image",fig.align='center', fig.cap = "The Lower Lakes and Coorong. The freshwater in the lakes is isolated from the marine water by five barrages. Exchange with the ocean occurs through the Murray Mouth, which is located near Goolwa. The Coorong is comprised of the North and South lagoons. Source: ..."}
+```{r intro-pic1, echo = FALSE, out.width='80%', class = "text-image",fig.align='center', fig.cap = "The Lower Lakes and Coorong. The freshwater in the lakes is isolated from the marine water by five barrages. Exchange with the ocean occurs through the Murray Mouth, which is located near Goolwa. The Coorong is comprised of the North and South lagoons. Source: ...", out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/intro/1_picture1.png")
 
@@ -82,7 +82,7 @@ A significant component of the work tasks are allocated to customise and develop
 
 The staged development and assessment approach to the above model components and how they are linked with related T&I components are summarised in Figure  \@ref(fig:dev-pic0) (the data-model integration strategy diagram) and outlined in the below sections.
 
-```{r dev-pic0, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Data and model integration strategy, showing links between the HCHB Goyder T&I research program and the model development priorities."}
+```{r dev-pic0, echo = FALSE, out.width='100%', class = "text-image", fig.cap = "Data and model integration strategy, showing links between the HCHB Goyder T&I research program and the model development priorities.", out.extra='data-action="zoom" loading="lazy"'}
 
 knitr::include_graphics("images/dev/Project integration diagram.png")
 
